@@ -16,8 +16,6 @@ jobs:
       with:
           channel: 'dev'
     - run: flutter pub get
-#     - run: flutter build apk --target-platform android-arm,android-arm64 --split-per-abi
-#     - run: flutter build appbundle --target-platform android-arm,android-arm64
     - run: flutter build apk
     - name: Upload APK
       uses: actions/upload-artifact@master
